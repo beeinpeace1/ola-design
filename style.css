@@ -1,0 +1,177 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700');
+
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #eeeeee;
+  padding: 10px;
+  font-family: 'Roboto';
+}
+
+.container {
+  width: 700px;
+  height: 320px;
+  background: #fff;
+  overflow: hidden;
+  border-radius: 10px;
+}
+
+.top {
+  height: 80px;
+  width: 100%;
+}
+
+.middle {
+  height: 160px;
+  width: 100%;
+  border-top: 1px solid #888;
+  border-bottom: 1px solid #888;
+}
+
+.bottom {
+  height: 80px;
+  width: 100%;
+}
+
+.top, .middle, .bottom{
+  display: flex;
+}
+
+.cash, .travel {
+  flex-grow: 1;
+  display: flex;
+}
+
+.travel {
+  border-left: 1px solid #888;
+}
+
+.cash-left, .cash-right, .travel-left, .travel-right, .middle-left, .middle-right{
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.cash-right, .travel-right {
+  align-items: flex-end;
+  justify-content: center;
+  padding-right: 40px;
+}
+
+.cash-left, .travel-left {
+  padding: 10px;
+}
+
+.cash-right span {
+  border-radius: 50%;
+  padding: 6px 0;
+  width: 30px;
+  color: navy;
+  border: 1px solid navy;
+  text-align: center;
+}
+
+.cash-to-pay, .cash-to-seat, .travel-with, .no-of-rider {
+  padding: 5px;
+}
+
+/* Middle */
+
+.car-name, .otp{
+  flex-grow: 1;
+  padding: 20px;
+}
+
+.car-name {
+  font-size: 1.3em;
+  padding-left: 35px;
+}
+
+.otp {
+  text-align: right;
+}
+
+.otp span {
+  padding: 5px;
+  background: yellow;
+}
+
+.car, .driver{
+  flex-grow: 3;
+  display: flex;
+}
+
+.car-image {
+  flex-grow: 1;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.car-details {
+  flex-grow: 3;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 10px;
+  padding-bottom: 25px;
+  font-size: 1.5em;
+}
+
+.car-image > img {
+  height: 100px;
+  width: 100px;
+  padding-right: 25px;
+  padding-bottom: 20px;
+}
+
+.driver-image {
+  flex-grow: 1;
+  display: flex;
+  padding-left: 0px;
+}
+
+.driver-details {
+  flex-grow: 3;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-end;
+  padding-bottom: 25px;
+  font-size: 1.5em;
+}
+
+.driver-image > img {
+  height: 70px;
+  width: 70px;
+  border-radius: 50%;
+}
+
+/* bottom */
+
+.bottom {
+  color: #777;
+}
+
+.bottom > div{
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  padding: 5px;
+}
+
+.bottom > div:not(.call){
+  border-left: 1px solid #888;
+}
+.bottom > div > i {
+  margin-bottom: 8px;
+  font-size: 1.8ems;
+}
